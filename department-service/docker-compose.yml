@@ -1,0 +1,35 @@
+version: "3"
+services:
+  departmentDB:
+    image: mysql/mysql-server:5.7
+    networks:
+      - department-mysql
+    container_name: departmentDB
+    environment:
+      - MYSQL_ROOT_PASSWORD=1234
+      - MYSQL_USER=root
+      - MYSQL_PASSWORD=1234
+      - MYSQL_DATABASE=health
+    volumes:
+      - /data/mysql
+  department-service:
+    image: department-service
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    ports:
+      - "8091:8091"
+    links:
+      - departmentDB
+    environment:
+      - DATABASE_HOST=departmentDB
+      - DATABASE_USER=root
+      - DATABASE_PASSWORD=1234
+      - DATABASE_NAME=health
+      - DATABASE_PORT=3306
+    networks:
+      - department-mysql
+    depends_on:
+      - departmentDB
+networks:
+  department-mysql:

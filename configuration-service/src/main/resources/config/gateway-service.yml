@@ -1,0 +1,58 @@
+server:
+  port: 8060
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+
+logging:
+  pattern:
+    console: "%d{yyyy-MM-dd HH:mm:ss} ${LOG_LEVEL_PATTERN:-%5p} %m%n"
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: hystrix.stream, info, health
+
+spring:
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+      routes:
+        - id: patient-service
+          uri: lb://patient-service                           #Spring Cloud Netflix Ribbon load-balancing via the lb prefix
+          predicates:
+            - Path=/patient/**
+          filters:
+            #- RewritePath=/patient/(?<path>.*), /v1/$\{path}  #To use with Swagger
+            - RewritePath=/patient/(?<path>.*), /$\{path}    #To use without Swagger (replaces /patient/foo to /foo (during 8060 -> 8092))
+            - name: Hystrix                                   #Filter name
+              args:
+                name: hystrixCommand                          #Hystrix Command name
+                fallbackUri: forward:/fallback/patient
+        - id: department-service
+          uri: lb://department-service
+          predicates:
+            - Path=/department/**
+          filters:
+            #- RewritePath=/department/(?<path>.*), /v1/$\{path}  #To use with Swagger
+            - RewritePath=/department/(?<path>.*), /$\{path}    #To use without Swagger (replaces /patient/foo to /foo (during 8060 -> 8091))
+            - name: Hystrix
+              args:
+                name: hystrixCommand
+                fallbackUri: forward:/fallback/department
+        - id: hospital-service
+          uri: lb://hospital-service
+          predicates:
+            - Path=/hospital/**
+          filters:
+            #- RewritePath=/hospital/(?<path>.*), /v1/$\{path}  #To use with Swagger
+            - RewritePath=/hospital/(?<path>.*), /$\{path}    #To use without Swagger (replaces /patient/foo to /foo (during 8060 -> 8090))
+            - name: Hystrix
+              args:
+                name: hystrixCommand
+                fallbackUri: forward:/fallback/hospital

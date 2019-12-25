@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="e760414c-b453-419f-ad8c-695b7d9a5ac0" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+        <option value="JUnit5 Test Class" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1UYeNpBnAk4kgNmhRyGNE2nzWVw" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
+    <property name="jdk.selected.JAVA_MODULE" value="11" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/hospital-service/src/test" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="preferences.general" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.paro.hospitalservice.controller" />
+      <recent name="com.paro.departmentservice.controller" />
+      <recent name="com.paro.hospitalservice.service" />
+      <recent name="com.paro.departmentservice.service" />
+      <recent name="com.paro.patientservice.service" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\PAROS\IdeaProjects\HealthAppWebFluxWebClient\hospital-service\src\test" />
+      <recent name="C:\Users\PAROS\IdeaProjects\HealthAppWebFluxWebClient\department-service\src\test\resources" />
+      <recent name="C:\Users\PAROS\IdeaProjects\HealthAppWebFluxWebClient\hospital-service\src\main\resources" />
+      <recent name="C:\Users\PAROS\IdeaProjects\HealthAppWebFluxWebClient\hospital-service" />
+      <recent name="C:\Users\PAROS\IdeaProjects\HealthAppWebFluxWebClient\hospital-service\src\main\java\com\paro\hospitalservice" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.paro.departmentservice.config" />
+      <recent name="com.paro.hospitalservice.config" />
+      <recent name="com.paro.patientservice.config" />
+      <recent name="com.paro.hospitalservice.model" />
+      <recent name="com.paro.gatewayservice" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.paro.departmentservice.model" />
+      <recent name="com.paro.patientservice.service" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Spring Boot.PatientServiceApplication">
+    <configuration name="DepartmentControllerTest.add" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="department-service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.paro.departmentservice.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.paro.departmentservice.controller" />
+      <option name="MAIN_CLASS_NAME" value="com.paro.departmentservice.controller.DepartmentControllerTest" />
+      <option name="METHOD_NAME" value="add" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DepartmentControllerTest.getByHospital" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="department-service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.paro.departmentservice.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.paro.departmentservice.controller" />
+      <option name="MAIN_CLASS_NAME" value="com.paro.departmentservice.controller.DepartmentControllerTest" />
+      <option name="METHOD_NAME" value="getByHospital" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HospitalControllerTest.add" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="hospital-service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.paro.hospitalservice.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.paro.hospitalservice.controller" />
+      <option name="MAIN_CLASS_NAME" value="com.paro.hospitalservice.controller.HospitalControllerTest" />
+      <option name="METHOD_NAME" value="add" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HospitalControllerTest.getAll" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="hospital-service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.paro.hospitalservice.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.paro.hospitalservice.controller" />
+      <option name="MAIN_CLASS_NAME" value="com.paro.hospitalservice.controller.HospitalControllerTest" />
+      <option name="METHOD_NAME" value="getAll" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PatientControllerTest.add" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="patient-service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.paro.patientservice.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.paro.patientservice.controller" />
+      <option name="MAIN_CLASS_NAME" value="com.paro.patientservice.controller.PatientControllerTest" />
+      <option name="METHOD_NAME" value="add" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ConfigurationServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="configuration-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.paro.configurationservice.ConfigurationServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DepartmentServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="department-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.paro.departmentservice.DepartmentServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DiscoveryServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="discovery-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.paro.discoveryservice.DiscoveryServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GatewayServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="gateway-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.paro.gatewayservice.GatewayServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HospitalServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="hospital-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.paro.hospitalservice.HospitalServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HystrixdashboardServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="hystrixdashboard-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.paro.hystrixdashboardservice.HystrixdashboardServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PatientServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="patient-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.paro.patientservice.PatientServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TurbineServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="turbine-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.paro.turbineservice.TurbineServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.DepartmentControllerTest.getByHospital" />
+        <item itemvalue="JUnit.HospitalControllerTest.add" />
+        <item itemvalue="JUnit.DepartmentControllerTest.add" />
+        <item itemvalue="JUnit.PatientControllerTest.add" />
+        <item itemvalue="JUnit.HospitalControllerTest.getAll" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e760414c-b453-419f-ad8c-695b7d9a5ac0" name="Default Changelist" comment="" />
+      <created>1575537918903</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1575537918903</updated>
+      <workItem from="1575537923332" duration="8418000" />
+      <workItem from="1575616688293" duration="6574000" />
+      <workItem from="1575704920931" duration="3183000" />
+      <workItem from="1576001437192" duration="10599000" />
+      <workItem from="1576048365549" duration="3914000" />
+      <workItem from="1576087536120" duration="4077000" />
+      <workItem from="1576177406663" duration="6331000" />
+      <workItem from="1576225723338" duration="19937000" />
+      <workItem from="1576347201678" duration="9455000" />
+      <workItem from="1576479634003" duration="8473000" />
+      <workItem from="1576571862351" duration="8407000" />
+      <workItem from="1576606331246" duration="13384000" />
+      <workItem from="1576652974442" duration="6631000" />
+      <workItem from="1576784140333" duration="685000" />
+      <workItem from="1576785330631" duration="1996000" />
+      <workItem from="1576865033157" duration="10828000" />
+      <workItem from="1576951063404" duration="12316000" />
+      <workItem from="1577044233787" duration="3856000" />
+      <workItem from="1577126907975" duration="13642000" />
+      <workItem from="1577214337232" duration="4879000" />
+      <workItem from="1577298020360" duration="2414000" />
+      <workItem from="1577301112473" duration="409000" />
+      <workItem from="1577301778290" duration="3900000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="233" y="3" key="#Notifications" timestamp="1577301504042">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="233" y="3" key="#Notifications/0.0.1280.680@0.0.1280.680" timestamp="1577301504042" />
+    <state x="233" y="2" key="#Project_Structure" timestamp="1575537928495">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="233" y="2" key="#Project_Structure/0.0.1280.680@0.0.1280.680" timestamp="1575537928495" />
+    <state x="446" y="59" key="#com.intellij.ide.util.MemberChooser" timestamp="1576865934818">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="446" y="59" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680@0.0.1280.680" timestamp="1576865934818" />
+    <state x="321" y="73" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1577303759924">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="321" y="73" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1280.680@0.0.1280.680" timestamp="1577303759924" />
+    <state x="371" y="92" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1576865864397">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="371" y="92" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1280.680@0.0.1280.680" timestamp="1576865864397" />
+    <state width="1237" height="157" key="GridCell.Tab.0.bottom" timestamp="1577303902560">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="157" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1577303902560" />
+    <state width="1237" height="157" key="GridCell.Tab.0.center" timestamp="1577303902560">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="157" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1577303902560" />
+    <state width="1237" height="157" key="GridCell.Tab.0.left" timestamp="1577303902560">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="157" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1577303902560" />
+    <state width="1237" height="157" key="GridCell.Tab.0.right" timestamp="1577303902560">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="157" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1577303902560" />
+    <state width="1237" height="157" key="GridCell.Tab.1.bottom" timestamp="1577303902561">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="157" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1577303902561" />
+    <state width="1237" height="157" key="GridCell.Tab.1.center" timestamp="1577303902560">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="157" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1577303902560" />
+    <state width="1237" height="157" key="GridCell.Tab.1.left" timestamp="1577303902560">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="157" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1577303902560" />
+    <state width="1237" height="157" key="GridCell.Tab.1.right" timestamp="1577303902561">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="157" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1577303902561" />
+    <state x="411" y="72" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1577215178563">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="411" y="72" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1280.680@0.0.1280.680" timestamp="1577215178563" />
+    <state x="181" y="6" width="1099" height="662" key="new project wizard" timestamp="1576787019183">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="181" y="6" width="1099" height="662" key="new project wizard/0.0.1280.680@0.0.1280.680" timestamp="1576787019183" />
+    <state x="699" y="0" key="refactoring.ChangeSignatureDialog" timestamp="1576358204638">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="699" y="0" key="refactoring.ChangeSignatureDialog/0.0.1280.680@0.0.1280.680" timestamp="1576358204638" />
+  </component>
+</project>

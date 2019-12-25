@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/configuration-service/configuration-service.iml" filepath="$PROJECT_DIR$/configuration-service/configuration-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/department-service/department-service.iml" filepath="$PROJECT_DIR$/department-service/department-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/discovery-service/discovery-service.iml" filepath="$PROJECT_DIR$/discovery-service/discovery-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gateway-service/gateway-service.iml" filepath="$PROJECT_DIR$/gateway-service/gateway-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hospital-service/hospital-service.iml" filepath="$PROJECT_DIR$/hospital-service/hospital-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hystrixdashboard-service/hystrixdashboard-service.iml" filepath="$PROJECT_DIR$/hystrixdashboard-service/hystrixdashboard-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/patient-service/patient-service.iml" filepath="$PROJECT_DIR$/patient-service/patient-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/turbine-service/turbine-service.iml" filepath="$PROJECT_DIR$/turbine-service/turbine-service.iml" />
+    </modules>
+  </component>
+</project>

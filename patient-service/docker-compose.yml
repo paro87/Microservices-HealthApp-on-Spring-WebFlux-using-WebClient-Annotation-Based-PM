@@ -1,0 +1,35 @@
+version: "3"
+services:
+  patientDB:
+    image: mysql/mysql-server:5.7
+    networks:
+      - patient-mysql
+    container_name: patientDB
+    environment:
+      - MYSQL_ROOT_PASSWORD=1234
+      - MYSQL_USER=root
+      - MYSQL_PASSWORD=1234
+      - MYSQL_DATABASE=health
+    volumes:
+      - /data/mysql
+  patient-service:
+    image: patient-service
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    ports:
+      - "8092:8092"
+    links:
+      - patientDB
+    environment:
+      - DATABASE_HOST=patientDB
+      - DATABASE_USER=root
+      - DATABASE_PASSWORD=1234
+      - DATABASE_NAME=health
+      - DATABASE_PORT=3306
+    networks:
+      - patient-mysql
+    depends_on:
+      - patientDB
+networks:
+  patient-mysql:

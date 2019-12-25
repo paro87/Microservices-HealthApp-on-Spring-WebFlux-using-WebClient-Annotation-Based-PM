@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="discovery-service" />
+        <module name="gateway-service" />
+        <module name="hospital-service" />
+        <module name="configuration-service" />
+        <module name="patient-service" />
+        <module name="turbine-service" />
+        <module name="department-service" />
+        <module name="hystrixdashboard-service" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="configuration-service" target="1.8" />
+      <module name="department-service" target="1.8" />
+      <module name="discovery-service" target="1.8" />
+      <module name="gateway-service" target="1.8" />
+      <module name="hospital-service" target="1.8" />
+      <module name="hystrixdashboard-service" target="1.8" />
+      <module name="patient-service" target="1.8" />
+      <module name="turbine-service" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="configuration-service" options="-parameters" />
+      <module name="department-service" options="-parameters" />
+      <module name="discovery-service" options="-parameters" />
+      <module name="gateway-service" options="-parameters" />
+      <module name="hospital-service" options="-parameters" />
+      <module name="hystrixdashboard-service" options="-parameters" />
+      <module name="patient-service" options="-parameters" />
+      <module name="turbine-service" options="-parameters" />
+    </option>
+  </component>
+</project>

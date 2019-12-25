@@ -1,0 +1,15 @@
+server:
+  port: 8761
+
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    registerWithEureka: false   #Eureka by default will register itself as a client. So, we need to set it to false.
+    fetchRegistry: false        #Indicates whether this client should fetch eureka registry information from eureka server.
+    serviceUrl:
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+
+logging:
+  pattern:
+    console: "%d{yyyy-MM-dd HH:mm:ss} ${LOG_LEVEL_PATTERN:-%5p} %m%n"
