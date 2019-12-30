@@ -27,7 +27,7 @@ public class HospitalController {
         return hospitalsFound;
     }
     @GetMapping(value = "/{id}")
-    public Mono<Hospital> getById(@PathVariable("id") Long hospitalId){
+    public Mono<Hospital> getByHospitalId(@PathVariable("id") Long hospitalId){
         Mono<Hospital> hospitalFound=hospitalService.getByHospitalId(hospitalId);
         return hospitalFound;
     }

@@ -51,13 +51,13 @@ public class PatientController {
     }
 
     @GetMapping(value = "/department/{departmentId}")
-    public Flux<Patient> getByDepartment(@PathVariable("departmentId") Long departmentId){
+    public Flux<Patient> getByDepartmentId(@PathVariable("departmentId") Long departmentId){
         LOGGER.info("Patients found in department with id={}", departmentId);
         return patientService.getByDepartmentId(departmentId);
     }
 
     @GetMapping(value="/hospital/{hospitalId}")
-    public Flux<Patient> getByHospital(@PathVariable("hospitalId") Long hospitalId) {
+    public Flux<Patient> getByHospitalId(@PathVariable("hospitalId") Long hospitalId) {
         LOGGER.info("Patients found in hospital with id={}", hospitalId);
         return patientService.getByHospitalId(hospitalId);
     }

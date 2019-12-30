@@ -25,7 +25,7 @@ public class DepartmentController {
     }
 
     @GetMapping(value = "/{id}")
-    public Mono<Department> getById(@PathVariable("id") Long departmentId){
+    public Mono<Department> getByDepartmentId(@PathVariable("id") Long departmentId){
         Mono<Department> department=departmentService.getByDepartmentId(departmentId);
         return department;
     }
@@ -35,7 +35,7 @@ public class DepartmentController {
         return departmentAdded;
     }
     @GetMapping(value = "/hospital/{hospitalId}")
-    public Flux<Department> getByHospital(@PathVariable("hospitalId") Long hospitalId){
+    public Flux<Department> getByHospitalId(@PathVariable("hospitalId") Long hospitalId){
         Flux<Department> departmentList=departmentService.getByHospitalId(hospitalId);
         return departmentList;
     }

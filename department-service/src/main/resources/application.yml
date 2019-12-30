@@ -1,0 +1,11 @@
+---
+spring:
+  profiles: production
+
+  datasource:
+    url:
+    username:
+    password:
+
+logging:
+  level:

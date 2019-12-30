@@ -67,7 +67,7 @@ public class HospitalService {
         LOGGER.info("Departments found with hospital id={}", hospitalId);
         //1-Returning value without usage of Hystrix
 /*
-        return hospitalMono.flatMap(hospital ->{
+        return hospitalList.flatMap(hospital ->{
             Flux<Department> departmentFlux = webClientBuilder.build().get().uri(REQUEST_URI_Department + hospital.getHospitalId()).exchange().flatMapMany(response -> response.bodyToFlux(Department.class));
             return departmentFlux.collectList()
                     .map(list->{
@@ -117,7 +117,7 @@ public class HospitalService {
   */
         //2-Using Hystrix: Returns only List<Department> as null
         Mono<Hospital> hospitalMono=hospitalList.flatMap(hospital ->{
-            Flux<Department> departmentFlux = webClientBuilder.build().get().uri(REQUEST_URI_Department + hospital.getHospitalId()).exchange().flatMapMany(response -> response.bodyToFlux(Department.class));
+            Flux<Department> departmentFlux = webClientBuilder.build().get().uri(REQUEST_URI_Department + hospital.getHospitalId()+"/with-patients").exchange().flatMapMany(response -> response.bodyToFlux(Department.class));
             Mono<Hospital> hospitalMono2= departmentFlux.collectList()
                     .map(list->{
                         hospital.setDepartmentList(list);
@@ -141,10 +141,10 @@ public class HospitalService {
 
     public Mono<Hospital> getHospitalWithPatients(Long hospitalId){
         Mono<Hospital> hospitalList=hospitalRepository.findByHospitalId(hospitalId);
-        LOGGER.info("Departments found with hospital id={}", hospitalId);
+        LOGGER.info("Patients found with hospital id={}", hospitalId);
         //1-1-Returning value without usage of Hystrix
 /*
-        return hospitalMono.flatMap(hospital ->{
+        return hospitalList.flatMap(hospital ->{
             Flux<Patient> patientFlux = webClientBuilder.build().get().uri(REQUEST_URI_Patient + hospital.getHospitalId()).exchange().flatMapMany(response -> response.bodyToFlux(Patient.class));
             return patientFlux.collectList()
                     .map(list->{
