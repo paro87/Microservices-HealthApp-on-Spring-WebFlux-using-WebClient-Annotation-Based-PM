@@ -10,7 +10,8 @@ import org.springframework.web.bind.annotation.*;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 @RestController
-//@RequestMapping("/v1")     //For Swagger UI: http://localhost:8092/swagger-ui.html
+@RequestMapping(path = "/service", produces = "application/json")   //Will only handle requests if the request’s Accept header includes “application/json”
+@CrossOrigin(origins="*")                                           //Allows clients from any domain to consume the API, especially for frontend
 public class PatientController {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(PatientController.class);
@@ -42,12 +43,44 @@ public class PatientController {
     }*/
 
     //2) Receiving and saving Mono<Patient> object
-    @PostMapping(value = "/")
-    @ResponseStatus(HttpStatus.CREATED)
+    @PostMapping(value = "/", consumes = "application/json")    //Will only handle requests whose Content-type matches application/json
+    @ResponseStatus(code = HttpStatus.CREATED)
     public Mono<Patient> add(@RequestBody Mono<Patient> patient){
         Mono<Patient> patientAdded=patientService.add(patient);
         //LOGGER.info("Patient added with id={}", patientAdded.subscribe(patient1 -> System.out.println(patient1.getPatientId())));
         return patientAdded;
+    }
+
+    @PutMapping(value = "/{id}")
+    public Mono<Patient> putById(@PathVariable("id") Long patientId, @RequestBody Mono<Patient> patient){
+        Mono<Patient> patientPut=patientService.put(patientId, patient);
+        return patientPut;
+    }
+    //1-Patch: Patient object
+    /*
+    @ResponseStatus(HttpStatus.CREATED)
+    @PatchMapping(value = "/{id}", consumes = "application/json")
+    public Mono<Patient> patchById(@PathVariable("id") Long patientId, @RequestBody Patient patient){
+        Mono<Patient> patientPatched=patientService.patch(patientId, patient);
+        patientPatched.subscribe(System.out::println);
+        return patientPatched;
+    }
+    */
+
+    //2-Patch: Mono<Patient> object
+    @ResponseStatus(HttpStatus.CREATED)
+    @PatchMapping(value = "/{id}", consumes = "application/json")
+    public Mono<Patient> patchById(@PathVariable("id") Long patientId, @RequestBody Mono<Patient> patient){
+        Mono<Patient> patientPatched=patientService.patch(patientId, patient);
+
+        return patientPatched;
+
+    }
+
+    @ResponseStatus(code = HttpStatus.NO_CONTENT)   // 204
+    @DeleteMapping(value = "/{id}")
+    public void deleteById(@PathVariable("id") Long patientId) {
+        patientService.deleteById(patientId);
     }
 
     @GetMapping(value = "/department/{departmentId}")

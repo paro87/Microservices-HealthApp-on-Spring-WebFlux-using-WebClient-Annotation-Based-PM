@@ -122,6 +122,7 @@
                 <artifactId>spring-boot-maven-plugin</artifactId>
             </plugin>
         </plugins>
+        <finalName>departmentService</finalName>
     </build>
     <repositories>
         <repository>

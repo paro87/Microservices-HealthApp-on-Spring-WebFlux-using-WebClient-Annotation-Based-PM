@@ -11,6 +11,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cloud.client.loadbalancer.LoadBalanced;
 import org.springframework.cloud.netflix.hystrix.HystrixCommands;
 import org.springframework.context.annotation.Bean;
+import org.springframework.dao.EmptyResultDataAccessException;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 import org.springframework.web.reactive.function.client.WebClient;
 import reactor.core.publisher.Flux;
@@ -25,7 +27,7 @@ public class DepartmentService {
     private DepartmentRepository departmentRepository;
 
     private String patientClient="http://patient-service";          //The host address will be fetched from Eureka
-    private static final String RESOURCE_PATH="/department/";
+    private static final String RESOURCE_PATH="/service/department/";
     private String REQUEST_URI=patientClient+RESOURCE_PATH;
 /*
     //Encountered a problem during fetching a host name from Eureka
@@ -76,6 +78,87 @@ public class DepartmentService {
         Mono<Department> departmentSaved=departmentRepository.saveAll(department).next();
         LOGGER.info("Department added with id={}", departmentSaved.subscribe(d-> System.out.println(d.getDepartmentId())));
         return departmentSaved;
+    }
+
+    public Mono<Department> put(Long departmentId, Mono<Department> departmentToPut) {
+        return departmentRepository.findByDepartmentId(departmentId)
+                .flatMap(department ->departmentRepository.delete(department))
+                .then(departmentRepository.saveAll(departmentToPut).next());
+
+        // Possible 2nd solution
+        /*
+        Mono<Department> departmentFound=departmentRepository.findByDepartmentId(departmentId);
+        Mono<Department> departmentPut=departmentFound.map(departmentFromRepo -> {
+            departmentToPut.map(departmentBeingPut -> {
+                if (departmentBeingPut.getName()!=null) {
+                    departmentFromRepo.setName(departmentBeingPut.getName());
+                }
+                if (departmentBeingPut.getHospitalId()!=null) {
+                    departmentFromRepo.setHospitalId(departmentBeingPut.getHospitalId());
+                }
+                if (departmentBeingPut.getPatientList()!=null) {
+                    departmentFromRepo.setPatientList(departmentBeingPut.getPatientList());
+                }
+                return departmentFromRepo;
+            }).subscribe();
+            return departmentFromRepo;
+        });
+        return departmentRepository.saveAll(departmentPut).next();*/
+    }
+
+    //1-Patch: Department object
+    /*
+    public Mono<Department> patch(Long departmentId, Department departmentToPatch) {
+        Mono<Department> departmentFound=departmentRepository.findByDepartmentId(departmentId);
+        Mono<Department> departmentPatched=departmentFound.map(department -> {
+            if (departmentToPatch.getDepartmentId()!=null) {
+                department.setDepartmentId(departmentToPatch.getDepartmentId());
+            }
+            if (departmentToPatch.getName()!=null) {
+                department.setName(departmentToPatch.getName());
+            }
+            if (departmentToPatch.getHospitalId()!=null) {
+                department.setHospitalId(departmentToPatch.getHospitalId());
+            }
+            if (departmentToPatch.getPatientList()!=null) {
+                department.setPatientList(departmentToPatch.getPatientList());
+            }
+            return department;
+        });
+        return departmentRepository.saveAll(departmentPatched).next();
+    }
+    */
+
+
+    //2-Patch: Mono<Department> object
+    public Mono<Department> patch(Long departmentId, Mono<Department> departmentToPatch) {
+        Mono<Department> departmentFound=departmentRepository.findByDepartmentId(departmentId);
+        Mono<Department> departmentPatched=departmentFound.map(departmentFromRepo -> {
+
+            departmentToPatch.map(departmentBeingPatched -> {
+
+                if (departmentBeingPatched.getDepartmentId()!=null) {
+                    departmentFromRepo.setDepartmentId(departmentBeingPatched.getDepartmentId());
+                }
+                if (departmentBeingPatched.getName()!=null) {
+                    departmentFromRepo.setName(departmentBeingPatched.getName());
+                }
+                if (departmentBeingPatched.getHospitalId()!=null) {
+                    departmentFromRepo.setHospitalId(departmentBeingPatched.getHospitalId());
+                }
+                if (departmentBeingPatched.getPatientList()!=null) {
+                    departmentFromRepo.setPatientList(departmentBeingPatched.getPatientList());
+                }
+                return departmentFromRepo;
+            }).subscribe();
+            return departmentFromRepo;
+        });
+        return departmentRepository.saveAll(departmentPatched).next();
+    }
+
+    public void deleteById(Long departmentId) {
+        Mono<Department> departmentToBeDeleted=departmentRepository.findByDepartmentId(departmentId);
+        departmentToBeDeleted.flatMap(department ->departmentRepository.delete(department)).subscribe();
     }
 
     public Flux<Department> getByHospitalId(Long hospitalId){

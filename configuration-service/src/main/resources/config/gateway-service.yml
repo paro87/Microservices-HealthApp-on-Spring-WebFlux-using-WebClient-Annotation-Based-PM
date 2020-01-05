@@ -28,8 +28,8 @@ spring:
           predicates:
             - Path=/patient/**
           filters:
-            #- RewritePath=/patient/(?<path>.*), /v1/$\{path}  #To use with Swagger
-            - RewritePath=/patient/(?<path>.*), /$\{path}    #To use without Swagger (replaces /patient/foo to /foo (during 8060 -> 8092))
+            - RewritePath=/patient/(?<path>.*), /service/$\{path}  #To use with Swagger
+            #- RewritePath=/patient/(?<path>.*), /$\{path}    #To use without Swagger (replaces /patient/foo to /foo (during 8060 -> 8092))
             - name: Hystrix                                   #Filter name
               args:
                 name: hystrixCommand                          #Hystrix Command name
@@ -39,8 +39,8 @@ spring:
           predicates:
             - Path=/department/**
           filters:
-            #- RewritePath=/department/(?<path>.*), /v1/$\{path}  #To use with Swagger
-            - RewritePath=/department/(?<path>.*), /$\{path}    #To use without Swagger (replaces /patient/foo to /foo (during 8060 -> 8091))
+            - RewritePath=/department/(?<path>.*), /service/$\{path}  #To use with Swagger
+            #- RewritePath=/department/(?<path>.*), /$\{path}    #To use without Swagger (replaces /patient/foo to /foo (during 8060 -> 8091))
             - name: Hystrix
               args:
                 name: hystrixCommand
@@ -50,8 +50,8 @@ spring:
           predicates:
             - Path=/hospital/**
           filters:
-            #- RewritePath=/hospital/(?<path>.*), /v1/$\{path}  #To use with Swagger
-            - RewritePath=/hospital/(?<path>.*), /$\{path}    #To use without Swagger (replaces /patient/foo to /foo (during 8060 -> 8090))
+            - RewritePath=/hospital/(?<path>.*), /service/$\{path}  #To use with Swagger
+            #- RewritePath=/hospital/(?<path>.*), /$\{path}    #To use without Swagger (replaces /patient/foo to /foo (during 8060 -> 8090))
             - name: Hystrix
               args:
                 name: hystrixCommand
