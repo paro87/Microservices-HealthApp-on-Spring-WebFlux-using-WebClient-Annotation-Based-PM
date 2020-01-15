@@ -40,25 +40,12 @@ public class DepartmentService {
         return WebClient.create();
     }*/
 
-    @Bean
-    @LoadBalanced
-    public WebClient.Builder loadBalancedWebClientBuilder() {
-        return WebClient.builder();
-    }
+    private final WebClient.Builder webClientBuilder;
 
     @Autowired
-    private WebClient.Builder webClientBuilder;
-
-    //For testing
-//    private WebClient webClient;
-//    DepartmentService(WebClient webClient){
-//        this.webClient=webClient;
-//    }
-
-    @Autowired
-    public DepartmentService(DepartmentRepository departmentRepository) {
+    public DepartmentService(DepartmentRepository departmentRepository, @LoadBalanced WebClient.Builder webClientBuilder) {
         this.departmentRepository=departmentRepository;
-
+        this.webClientBuilder = webClientBuilder;
     }
 
     public Flux<Department> getAll() {
@@ -172,17 +159,14 @@ public class DepartmentService {
 
         Flux<Department> departmentList = departmentRepository.findByHospitalId(hospitalId);
         //1 - Returning value without using Hystrix circuit breaker
-/*
         return departmentList.flatMap(department -> {
-            System.out.println("Here");
-            //Flux<Patient> patientFlux = webClient.get().uri(REQUEST_URI + department.getDepartmentId()).exchange().flatMapMany(response -> response.bodyToFlux(Patient.class));
+                        //Flux<Patient> patientFlux = webClient.get().uri(REQUEST_URI + department.getDepartmentId()).exchange().flatMapMany(response -> response.bodyToFlux(Patient.class));
             Flux<Patient> patientFlux = webClientBuilder.build().get().uri(REQUEST_URI + department.getDepartmentId()).exchange().flatMapMany(response -> response.bodyToFlux(Patient.class));
             return patientFlux.collectList().map(list -> {
                 department.setPatientList(list);
                 return department;
             });
         });
-*/
 
 
         //2 - Using Hystrix: Returns all department entities as null
@@ -214,7 +198,7 @@ public class DepartmentService {
 */
 
         //3 Using Hystrix: Returns only List<Patient> as null
-        Flux<Department> departmentFlux= departmentList.flatMap(department -> {
+/*        Flux<Department> departmentFlux= departmentList.flatMap(department -> {
             Flux<Patient> patientFlux = webClientBuilder.build().get().uri(REQUEST_URI + department.getDepartmentId()).exchange().flatMapMany(response -> response.bodyToFlux(Patient.class));
             Mono<Department>departmentMono= patientFlux.collectList()
                     .map(list -> {
@@ -236,7 +220,7 @@ public class DepartmentService {
                     .commandName("getByHospitalWithPatients_Fallback")
                     .toMono();
         });
-        return departmentFlux;
+        return departmentFlux;*/
 
 
 

@@ -2,19 +2,55 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e760414c-b453-419f-ad8c-695b7d9a5ac0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__de_codecentric_spring_boot_admin_server_2_2_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__de_codecentric_spring_boot_admin_server_cloud_2_2_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__de_codecentric_spring_boot_admin_server_ui_2_2_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__de_codecentric_spring_boot_admin_starter_server_2_2_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_attoparser_attoparser_2_0_5_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_bouncycastle_bcpkix_jdk15on_1_64.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_bouncycastle_bcprov_jdk15on_1_64.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_thymeleaf_2_2_2_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_commons_2_2_1_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_config_client_2_2_1_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_context_2_2_1_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_loadbalancer_2_2_1_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_netflix_archaius_2_2_1_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_netflix_eureka_client_2_2_1_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_netflix_hystrix_2_2_1_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_netflix_ribbon_2_2_1_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_2_2_1_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_config_2_2_1_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_loadbalancer_2_2_1_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_netflix_archaius_2_2_1_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_projectreactor_reactor_test_3_3_0_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_core_3_0_0_SNAPSHOT.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_core_3_0_0_SNAPSHOT.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_schema_3_0_0_SNAPSHOT.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_schema_3_0_0_SNAPSHOT.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_spi_3_0_0_SNAPSHOT.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_spi_3_0_0_SNAPSHOT.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_spring_web_3_0_0_SNAPSHOT.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_spring_web_3_0_0_SNAPSHOT.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_spring_webflux_3_0_0_SNAPSHOT.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_spring_webflux_3_0_0_SNAPSHOT.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_swagger2_3_0_0_SNAPSHOT.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_swagger2_3_0_0_SNAPSHOT.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_swagger_common_3_0_0_SNAPSHOT.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_swagger_common_3_0_0_SNAPSHOT.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_swagger_ui_3_0_0_SNAPSHOT.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_swagger_ui_3_0_0_SNAPSHOT.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_data_mongodb_reactive_2_2_1_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_commons_2_2_1_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_mongodb_2_2_1_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_plugin_spring_plugin_core_1_2_0_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_plugin_spring_plugin_core_2_0_0_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_plugin_spring_plugin_metadata_1_2_0_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_plugin_spring_plugin_metadata_2_0_0_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_tx_5_2_1_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/configuration-service/src/main/resources/config/gateway-service.yml" beforeDir="false" afterPath="$PROJECT_DIR$/configuration-service/src/main/resources/config/gateway-service.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/configuration-service/src/main/resources/config/department-service.yml" beforeDir="false" afterPath="$PROJECT_DIR$/configuration-service/src/main/resources/config/department-service.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/configuration-service/src/main/resources/config/hospital-service.yml" beforeDir="false" afterPath="$PROJECT_DIR$/configuration-service/src/main/resources/config/hospital-service.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/configuration-service/src/main/resources/config/patient-service2.yml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/department-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/department-service/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/department-service/src/main/java/com/paro/departmentservice/controller/DepartmentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/department-service/src/main/java/com/paro/departmentservice/controller/DepartmentController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/department-service/src/main/java/com/paro/departmentservice/service/DepartmentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/department-service/src/main/java/com/paro/departmentservice/service/DepartmentService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/hospital-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/hospital-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hospital-service/src/main/java/com/paro/hospitalservice/controller/HospitalController.java" beforeDir="false" afterPath="$PROJECT_DIR$/hospital-service/src/main/java/com/paro/hospitalservice/controller/HospitalController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/hospital-service/src/main/java/com/paro/hospitalservice/service/HospitalService.java" beforeDir="false" afterPath="$PROJECT_DIR$/hospital-service/src/main/java/com/paro/hospitalservice/service/HospitalService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/patient-service/src/main/java/com/paro/patientservice/controller/PatientController.java" beforeDir="false" afterPath="$PROJECT_DIR$/patient-service/src/main/java/com/paro/patientservice/controller/PatientController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/patient-service/src/main/java/com/paro/patientservice/repository/PatientRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/patient-service/src/main/java/com/paro/patientservice/repository/PatientRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/patient-service/src/main/java/com/paro/patientservice/service/PatientService.java" beforeDir="false" afterPath="$PROJECT_DIR$/patient-service/src/main/java/com/paro/patientservice/service/PatientService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/patient-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/patient-service/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,7 +116,7 @@
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="jdk.selected.JAVA_MODULE" value="11" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/patient-service/src/main/resources" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/actuator-service/src/main/resources" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -96,26 +132,26 @@
       <recent name="com.paro.departmentservice.service" />
       <recent name="com.paro.patientservice.service" />
     </key>
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="com.paro.departmentservice.model" />
-      <recent name="com.paro.patientservice.service" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.paro.patientservice.config" />
-      <recent name="com.paro.hospitalservice.config" />
-      <recent name="com.paro.departmentservice.config" />
-      <recent name="com.paro.hospitalservice.model" />
-      <recent name="com.paro.gatewayservice" />
-    </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\PAROS\IdeaProjects\HealthAppWebFluxWebClient\actuator-service\src\main\resources" />
+      <recent name="C:\Users\PAROS\IdeaProjects\HealthAppWebFluxWebClient\actuator-service" />
+      <recent name="C:\Users\PAROS\IdeaProjects\HealthAppWebFluxWebClient\configuration-service\src\main\resources\config" />
       <recent name="C:\Users\PAROS\IdeaProjects\HealthAppWebFluxWebClient\patient-service\src\main\resources" />
       <recent name="C:\Users\PAROS\IdeaProjects\HealthAppWebFluxWebClient\hospital-service\src\main\resources" />
-      <recent name="C:\Users\PAROS\IdeaProjects\HealthAppWebFluxWebClient\department-service\src\main\resources" />
-      <recent name="C:\Users\PAROS\IdeaProjects\HealthAppWebFluxWebClient\hospital-service\src\test" />
-      <recent name="C:\Users\PAROS\IdeaProjects\HealthAppWebFluxWebClient\department-service\src\test\resources" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.paro.hospitalservice.config" />
+      <recent name="com.paro.departmentservice.config" />
+      <recent name="com.paro.patientservice.config" />
+      <recent name="com.paro.hospitalservice.model" />
+      <recent name="com.paro.gatewayservice" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.paro.departmentservice.model" />
+      <recent name="com.paro.patientservice.service" />
     </key>
   </component>
   <component name="RunManager" selected="Spring Boot.PatientServiceApplication">
@@ -195,6 +231,13 @@
       <option name="MAIN_CLASS_NAME" value="com.paro.patientservice.controller.PatientControllerTest" />
       <option name="METHOD_NAME" value="add" />
       <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ActuatorServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="actuator-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.paro.actuatorservice.ActuatorServiceApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -317,7 +360,13 @@
       <workItem from="1578040359404" duration="13561000" />
       <workItem from="1578161688631" duration="12805000" />
       <workItem from="1578210405083" duration="9835000" />
-      <workItem from="1578247806264" duration="6188000" />
+      <workItem from="1578247806264" duration="10015000" />
+      <workItem from="1578302801784" duration="761000" />
+      <workItem from="1578422717998" duration="2876000" />
+      <workItem from="1578491119737" duration="771000" />
+      <workItem from="1578898892601" duration="3719000" />
+      <workItem from="1578942651122" duration="3538000" />
+      <workItem from="1579078435274" duration="1276000" />
     </task>
     <servers />
   </component>
@@ -349,46 +398,46 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="371" y="92" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1280.680@0.0.1280.680" timestamp="1576865864397" />
-    <state width="1237" height="196" key="GridCell.Tab.0.bottom" timestamp="1578253698687">
+    <state width="1237" height="87" key="GridCell.Tab.0.bottom" timestamp="1578258246102">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="196" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1578253698687" />
-    <state width="1237" height="196" key="GridCell.Tab.0.center" timestamp="1578253698686">
+    <state width="1237" height="87" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1578258246102" />
+    <state width="1237" height="87" key="GridCell.Tab.0.center" timestamp="1578258246102">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="196" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1578253698686" />
-    <state width="1237" height="196" key="GridCell.Tab.0.left" timestamp="1578253698686">
+    <state width="1237" height="87" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1578258246102" />
+    <state width="1237" height="87" key="GridCell.Tab.0.left" timestamp="1578258246102">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="196" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1578253698686" />
-    <state width="1237" height="196" key="GridCell.Tab.0.right" timestamp="1578253698686">
+    <state width="1237" height="87" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1578258246102" />
+    <state width="1237" height="87" key="GridCell.Tab.0.right" timestamp="1578258246102">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="196" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1578253698686" />
-    <state width="1237" height="196" key="GridCell.Tab.1.bottom" timestamp="1578253698687">
+    <state width="1237" height="87" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1578258246102" />
+    <state width="1237" height="87" key="GridCell.Tab.1.bottom" timestamp="1578258246102">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="196" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1578253698687" />
-    <state width="1237" height="196" key="GridCell.Tab.1.center" timestamp="1578253698687">
+    <state width="1237" height="87" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1578258246102" />
+    <state width="1237" height="87" key="GridCell.Tab.1.center" timestamp="1578258246102">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="196" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1578253698687" />
-    <state width="1237" height="196" key="GridCell.Tab.1.left" timestamp="1578253698687">
+    <state width="1237" height="87" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1578258246102" />
+    <state width="1237" height="87" key="GridCell.Tab.1.left" timestamp="1578258246102">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="196" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1578253698687" />
-    <state width="1237" height="196" key="GridCell.Tab.1.right" timestamp="1578253698687">
+    <state width="1237" height="87" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1578258246102" />
+    <state width="1237" height="87" key="GridCell.Tab.1.right" timestamp="1578258246102">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="196" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1578253698687" />
+    <state width="1237" height="87" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1578258246102" />
     <state x="411" y="72" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1577215178563">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="411" y="72" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1280.680@0.0.1280.680" timestamp="1577215178563" />
-    <state x="181" y="6" width="1099" height="662" key="new project wizard" timestamp="1576787019183">
+    <state x="181" y="6" width="1099" height="662" key="new project wizard" timestamp="1579078976127">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="181" y="6" width="1099" height="662" key="new project wizard/0.0.1280.680@0.0.1280.680" timestamp="1576787019183" />
+    <state x="181" y="6" width="1099" height="662" key="new project wizard/0.0.1280.680@0.0.1280.680" timestamp="1579078976127" />
     <state x="699" y="0" key="refactoring.ChangeSignatureDialog" timestamp="1576358204638">
       <screen x="0" y="0" width="1280" height="680" />
     </state>

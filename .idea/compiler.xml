@@ -9,14 +9,16 @@
         <module name="discovery-service" />
         <module name="gateway-service" />
         <module name="hospital-service" />
+        <module name="actuator-service" />
         <module name="configuration-service" />
-        <module name="patient-service" />
         <module name="turbine-service" />
+        <module name="patient-service" />
         <module name="department-service" />
         <module name="hystrixdashboard-service" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="actuator-service" target="1.8" />
       <module name="configuration-service" target="1.8" />
       <module name="department-service" target="1.8" />
       <module name="discovery-service" target="1.8" />
@@ -29,6 +31,7 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="actuator-service" options="-parameters" />
       <module name="configuration-service" options="-parameters" />
       <module name="department-service" options="-parameters" />
       <module name="discovery-service" options="-parameters" />

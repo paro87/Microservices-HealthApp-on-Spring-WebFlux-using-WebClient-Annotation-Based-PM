@@ -78,7 +78,7 @@ public class DepartmentController {
     @GetMapping(value = "/hospital/{hospitalId}/with-patients")
     public Flux<Department> getByHospitalWithPatients(@PathVariable("hospitalId") Long hospitalId){
         Flux<Department> departmentList=departmentService.getByHospitalWithPatients(hospitalId);
-        departmentList.subscribe(d-> System.out.println("In controller: "+d.toString()));
+        //departmentList.subscribe(d-> System.out.println("In controller: "+d.toString()));
         return departmentList;
     }
 }

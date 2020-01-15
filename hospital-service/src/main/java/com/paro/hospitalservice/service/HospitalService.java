@@ -27,19 +27,12 @@ public class HospitalService {
 
     private HospitalRepository hospitalRepository;
 
-    @Bean
-    @LoadBalanced
-    public WebClient.Builder loadBalancedWebClientBuilder() {
-        return WebClient.builder();
-    }
+    private final WebClient.Builder webClientBuilder;
 
     @Autowired
-    private WebClient.Builder webClientBuilder;
-
-    @Autowired
-    public void HospitalService (HospitalRepository hospitalRepository){
+    public HospitalService(HospitalRepository hospitalRepository, @LoadBalanced WebClient.Builder webClientBuilder) {
         this.hospitalRepository=hospitalRepository;
-
+        this.webClientBuilder = webClientBuilder;
     }
 
     public Flux<Hospital> getAll(){
